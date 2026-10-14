@@ -51,6 +51,6 @@ if not rows or not probe or max(probe) < 150:
 rows.sort(key=lambda r: r[0])
 with open(OUT, "w", newline="") as f:
     w = csv.writer(f, lineterminator="\n")
-    w.writerow(["id", "price_dkk", "sale_price_dkk", "handle"])
+    w.writerow(["id", "price_dkk", "sale_price_dkk", "dk_handle"])
     w.writerows(rows)
 print(f"{len(rows)} varianten geschreven naar {OUT}")
